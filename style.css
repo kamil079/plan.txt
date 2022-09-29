@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
-.header, .main {
-    border: 1px solid #000;
+.header,
+.main,
+.square,
+.line,
+.circle,
+.ractangle {
+    border: 3px solid #000;
 }
 
 .header {
@@ -18,7 +23,72 @@
     height: 90vh;
     width: 100%;
     background: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+div[class*='box'] {
+    width: 100%;
+    display: flex;
+}
+
+.box-square {
+    transform: rotate(-45deg);
+}
+
+.square {
+    height: 120px;
+    width: 120px;
+    background: #FF0000;
+    margin-right: 40px;
+
+}
+
+
+.lines {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+}
+
+.line {
+    background: #0000FF;
+    height: 20px;
+    width: 130px;
+    margin-bottom: 25px;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background: rgb(0, 129, 194);
+    border-radius: 50%;
+    margin-top: -17px;
+    margin-left: 25px;
+
+}
+
+.box-circle {
+    margin-bottom: -200px;
+
+}
+
+.racktangle {
+    height: 350px;
+    width: 215px;
+    background: blue;
+    margin-left: 18%;
+    margin-bottom: 10px;
+
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: monospace;
+    line-height: 120px;
+}
+
+
 
 /* @media (max-width: 583px) {
     .main {
