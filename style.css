@@ -105,19 +105,6 @@ div[class*='box'] {
     line-height: 120px;
 }
 
-/* 
-@media (max-width: 583px) {
-    .main {
-        background: blue;
-    }
-}
-
-@media (min-width: 901px) {
-    .main {
-        background: red;
-    }
-} */
-
 @media (min-width: 584px) and (max-width: 900px) {
 
     .main {
@@ -153,3 +140,38 @@ div[class*='box'] {
         width: 35%;
     }
 }
+
+@media (min-width: 901px) {
+    .main {
+        padding: 0;
+    }
+    
+    .square {
+        height: 120px;
+        width: 120px;
+        top: 55%;
+        left: 5%;
+    }
+
+    .square:nth-child(1) {
+        top: 12%;
+        left: 18%;
+    }
+
+    .box-circle {
+        position: absolute;
+        top: 28%;
+        left: 30%;
+    }
+    
+
+    .ractangle {
+        background: #fff;
+        position: absolute;
+        right: 5%;
+        top: 18%;
+
+        height: 78%;
+        width: 25%;
+    }
+    }
